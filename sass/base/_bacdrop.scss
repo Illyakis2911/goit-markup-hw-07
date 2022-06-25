@@ -1,0 +1,283 @@
+.backdrop {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  transition: opacity 250ms var(--transition),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: visible;
+  opacity: 1;
+}
+.backdrop.is-hidden {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  width: 528px;
+  height: 581px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+}
+.backdrop-button {
+  display: flex;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+
+  background: var(--begraut-ccolor);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.button-icon {
+  justify-content: center;
+  margin-top: 4px;
+
+  fill: var(--title-text-color);
+}
+.button-icon:hover,
+.button-icon:focus {
+  fill: var(--accent-color);
+}
+
+/* форма на бекдроп  */
+
+.form-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 12px;
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* форма імя */
+
+.form-neim {
+  margin-bottom: 10px;
+  position: relative;
+}
+.form-neim label {
+  margin-bottom: 4px;
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+.form-neim input {
+  padding-left: 35px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transform: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-neim input:focus + .form-icon,
+.form-neim input:hover + .form-icon {
+  fill: var(--accent-color);
+}
+.form-neim input:focus,
+.form-neim input:hover {
+  border-color: var(--accent-color);
+}
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+}
+
+/* форма телефон */
+.form-phone {
+  margin-bottom: 10px;
+  position: relative;
+}
+.form-phone label {
+  margin-bottom: 4px;
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+.form-phone input:focus + .form-icon,
+.form-phone input:hover + .form-icon {
+  fill: var(--accent-color);
+}
+.form-phone input:focus,
+.form-phone input:hover {
+  border-color: var(--accent-color);
+}
+.form-phone input {
+  padding-left: 35px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border 0.3s, background-color 0.3s;
+}
+
+/* форма почта */
+.form-mail {
+  margin-bottom: 10px;
+  position: relative;
+}
+.form-mail label {
+  margin-bottom: 4px;
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.form-mail input:focus + .form-icon,
+.form-mail input:hover + .form-icon {
+  fill: var(--accent-color);
+}
+.form-mail input:focus,
+.form-mail input:hover {
+  border-color: var(--accent-color);
+}
+.form-mail input {
+  padding-left: 35px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: border 0.3s, background-color 0.3s;
+  border-radius: 4px;
+}
+
+/* форма коментар */
+
+.form-coment label {
+  margin-bottom: 4px;
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+.form-coment textarea {
+  padding: 12px 16px;
+  resize: none;
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border 0.3s, background-color 0.3s;
+}
+.form-coment textarea::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-coment textarea:focus,
+.form-coment textarea:hover {
+  border-color: var(--accent-color);
+}
+
+/* галочка  */
+.form-checkbox {
+  margin-left: 12px;
+}
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 445px;
+
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  background-color: transparent;
+  border-radius: 2px;
+  transition: border 0.3s, background-color 0.3s;
+}
+.checkbox-icon svg {
+  border: none;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s;
+}
+.checkbox:checked + .checkbox-icon svg {
+  fill: var(--begraut-ccolor);
+
+  opacity: 1;
+}
+.checkbox:checked + .checkbox-icon {
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+.checkbox-text {
+  align-content: center;
+  margin-left: 8px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.checkbox-text a {
+  color: var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+.form-button {
+  width: 200px;
+  height: 50px;
+  background: var(--accent-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--begraut-ccolor);
+  margin-top: 30px;
+}

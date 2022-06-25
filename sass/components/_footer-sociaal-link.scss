@@ -1,0 +1,43 @@
+.footer-social {
+  margin-left: 70px;
+  margin-top: 25px;
+}
+.footer-social__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--begraut-ccolor);
+  display: flex;
+  margin-bottom: 20px;
+}
+.link-list {
+  display: flex;
+}
+
+.footer-social__link {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color var(--transition);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer-social__icon {
+  display: flex;
+  text-align: center;
+  fill: var(--begraut-ccolor);
+  padding: auto;
+}
