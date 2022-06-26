@@ -48,18 +48,19 @@
   display: block;
   background-color: #2f303a;
   width: 358px;
-}
-.footer-folrm__label::placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.2;
-  display: block;
-  align-items: center;
-  letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
-  padding-left: 16px;
+  &::placeholder {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    display: block;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+  }
 }
 
 .footer-form__icon {

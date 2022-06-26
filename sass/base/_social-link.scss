@@ -32,9 +32,8 @@
   fill: #afb1b8;
   padding: auto;
   transition: fill var(--transition);
-}
-
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
-  fill: var(--begraut-ccolor);
+  .social-link:hover &,
+  .social-link:focus & {
+    fill: var(--begraut-ccolor);
+  }
 }

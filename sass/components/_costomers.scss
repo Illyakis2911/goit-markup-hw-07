@@ -26,17 +26,19 @@
   border-radius: 4px;
   margin-right: 30px;
   transition: border-color var(--transition);
-}
-.customers-link:hover,
-.customers-link:focus {
-  border-color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 .customers-icon {
   margin: 16px 32px;
   fill: #afb1b8;
   transition: fill var(--transition);
-}
-.customers-link:hover .customers-icon,
-.customers-link:focus .customers-icon {
-  fill: var(--accent-color);
+
+  .customers-link:hover &,
+  .customers-link:focus & {
+    fill: var(--accent-color);
+  }
 }
